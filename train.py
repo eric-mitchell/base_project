@@ -1,8 +1,11 @@
+import numpy as np
 import torch
 import torchvision as tv
 import torch.nn.functional as F
+from torchsummary import summary
+
+
 import argparse
-import numpy as np
 
 
 parser = argparse.ArgumentParser()
@@ -21,6 +24,7 @@ torch.backends.cudnn.benchmark = False
 np.random.seed(args.seed)
 
 def run():
+    # summary(model, (INPUT_SHAPE,))
     step = 0
     steps_per_epoch = 1000
     for epoch in range(args.epochs):

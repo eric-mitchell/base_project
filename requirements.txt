@@ -1,0 +1,6 @@
+torch
+torchvision
+torchsummary
+guildai
+numpy
+
