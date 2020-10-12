@@ -1,0 +1,6 @@
+train:
+  default: yes
+  flags-import: all
+  flags-import-skip: []
+  output-scalars:
+    '^(\key) := (\value)'
